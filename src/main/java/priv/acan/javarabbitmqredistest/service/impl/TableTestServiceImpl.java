@@ -50,7 +50,7 @@ public class TableTestServiceImpl extends ServiceImpl<TableTestMapper, TableTest
     public void updateTableTest1() {
         ms.deleteKey(RK);
         lambdaUpdate().set(TableTest::getCol1, "aaa")
-                .set(TableTest::getCol2, 222)
+                .set(TableTest::getCol2, 111)
                 .update();
     }
 
@@ -59,7 +59,7 @@ public class TableTestServiceImpl extends ServiceImpl<TableTestMapper, TableTest
     public void updateTableTest2() {
         ms.deleteKey(RK);
         lambdaUpdate().set(TableTest::getCol1, "aaa")
-                .set(TableTest::getCol2, 111)
+                .set(TableTest::getCol2, 222)
                 .update();
     }
 
