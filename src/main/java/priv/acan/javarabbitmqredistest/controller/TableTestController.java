@@ -38,7 +38,7 @@ public class TableTestController {
 
     @GetMapping("/set2")
     public String set2() {
-        tableTestService.updateTableTest1();
+        tableTestService.updateTableTest2();
         return "222";
     }
 
