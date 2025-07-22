@@ -1,0 +1,17 @@
+stages:
+  - maven_build
+#  - docker_build
+
+# 构建阶段
+maven_build:
+  stage: maven_build
+  script:
+    - mvn clean
+    - mvn package -U -DskipTests=true -f pom.xml
+    - echo "Maven build completed successfully"
+
+#docker_build:
+#  stage: docker_build
+#  script:
+#    - echo "Building the Docker image"
+#    - make docker-build
